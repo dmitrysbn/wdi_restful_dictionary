@@ -4,4 +4,12 @@ class EntriesController < ApplicationController
     render :index
   end
 
+  def show
+    # render :show
+  end
+
+  def new
+
+  end
+
 end
