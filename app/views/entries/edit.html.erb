@@ -1,1 +1,5 @@
-<p>This is the edit view</p>
+<h1>Edit <%= link_to @entry.word, entry_path(@entry.id) %></h1>
+
+<%= link_to 'Back to dictonary', entries_path %>
+
+<%= render 'entry_form', entry: @entry %>

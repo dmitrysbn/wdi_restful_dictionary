@@ -1,7 +1,7 @@
 <%= link_to 'Back to dictionary', entries_path %><br>
 
 <p>
-  <%= render 'entry', entry: Entry.find(params[:id]) %>
+  <%= render 'entry', entry: @entry %>
 </p>
 
 <%= link_to "Edit entry", edit_entry_path %>
