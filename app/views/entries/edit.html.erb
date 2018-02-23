@@ -3,3 +3,5 @@
 <%= link_to 'Back to dictonary', entries_path %>
 
 <%= render 'entry_form', entry: @entry %>
+
+<%= link_to 'Delete', entry_path(@entry), method: :delete, data: {confirm: "Are you sure you want to delete the entry '#{@entry.word}'? This cannot be undone!"} %>
