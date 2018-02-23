@@ -1,1 +1,11 @@
-<p>This is the entries index page</p>
+<h1>Dictionary</h1>
+
+<p>
+  <%= link_to "New entry", new_entry_path %>
+</p>
+
+<ul>
+  <% @entries.each do |entry| %>
+    <li><%= render 'entry', entry: entry %></li>
+  <% end %>
+</ul>
