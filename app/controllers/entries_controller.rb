@@ -6,11 +6,11 @@ class EntriesController < ApplicationController
   end
 
   def show
-    # render :show
+    render :show
   end
 
   def new
-
+    @entry = Entry.new
   end
 
   def create
